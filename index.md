@@ -12,7 +12,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Project 1
 
-Summary: [see more](./another-page.html).
+Summary: Hello, hello, hello[...see more](./another-page.html).
 
 ## Header 2
 
