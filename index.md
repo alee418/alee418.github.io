@@ -7,7 +7,7 @@ layout: default
 
 **Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
 
-**Summary:** Hello, hello, hello[...see more](./page_1.html).
+**Summary:** Hello, hello, hello[...see more](./bostonarmedrobberies.html).
 
 * * *
 
