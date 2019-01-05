@@ -15,7 +15,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 Summary: Hello, hello, hello[...see more](./page_1.html).
 
 ## Header 2
-## **Header 2**
 
 > This is a blockquote following a header.
 >
