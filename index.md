@@ -35,6 +35,6 @@ layout: default
 
 ![Branching](/assets/img/PR_1.png)
 
-**Goal:** 
+**Goal:** Examine information about sentence lengths for crimes of similar severity for males and females.
 
-**Summary:** [...see more](./prisonreport.html)
+**Summary:** Apply non-parametric techniques to detect significant difference in length of prison sentences between genders[...see more](./prisonreport.html)
