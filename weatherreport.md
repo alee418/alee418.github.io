@@ -18,12 +18,12 @@ Krustal Wallis Test and multiple comparisons.
 To assess the distributions of our groups of data, I have created histograms (B =
 Blizzard, FF = Flash Flood, L = Lightning, T = Tornado) as follows:
 
-## pic
+![Branching](/assets/img/WR_1.png)
 
 And to further address the distributions of the different types of extreme weather or
 pinpoint any possible outliers, I have also created a boxplot of the data:
 
-## pic
+![Branching](/assets/img/WR_2.png)
 
 The histograms show that the distributions of our groups are not symmetric. The
 boxplot also shows that the data is skewed and that the number of deaths for flash
@@ -88,5 +88,9 @@ present higher risk than those that have more lightning occurrence. For someone
 looking for a new place to live or looking for insurance rates for a certain area, it
 would be good to know the difference between areas that predominantly
 experience flash floods and areas the see mostly lightning.
+
+```r
+
+```
 
 [back](./)
