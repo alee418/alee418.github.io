@@ -13,6 +13,8 @@ layout: default
 
 # [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
 
+![Branching](/assets/img/POBC_5.png)
+
 **Goal:** Analyze categorical data on instances of breast cancer reported by UC Irvine.
 
 **Summary:** Conduct a simple logistic regression to predict if a tumor will be malignant or benign[...see more](./predictbreastcancers.html)
