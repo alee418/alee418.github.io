@@ -11,7 +11,7 @@ layout: default
 
 * * *
 
-## [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
+# [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
 
 ![Branching](/assets/img/POBC_5.png)
 
@@ -21,7 +21,7 @@ layout: default
 
 * * *
 
-## [Weather Report](./weatherreport.html)
+# [Weather Report](./weatherreport.html)
 
 ![Branching](/assets/img/WR_1.png)
 
