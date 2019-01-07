@@ -10,7 +10,7 @@ Over time, the variance increases; this can be seen in the fact that the peaks a
 larger space in between them. The mean also changes as an upward trend is evident. Therefore,
 the data is not stationary.
 
-### pic
+![Branching](/assets/img/BARP_1.png)
 
 ## Transformations
 
