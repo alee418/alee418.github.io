@@ -3,7 +3,7 @@ layout: default
 ---
 # Boston Armed Robberies Report
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](/assets/img/BARP_1.png)
 
 **Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
 
