@@ -71,7 +71,7 @@ confidence interval for that odds ratio would subsequently be (1.3, 2.3).
 Chi-square of 781.08 with 7 degrees of freedom and an associated p-value of less than 0.05
 shows that our model fits significantly better than the empty model.
 
-###  Residual Plots
+#### Residual Plots
 
 ### pics (2)
 
