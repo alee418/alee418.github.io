@@ -90,7 +90,87 @@ would be good to know the difference between areas that predominantly
 experience flash floods and areas the see mostly lightning.
 
 ```r
+# Krustal Wallis Test
+library(coin)
+data = read.csv("C:/Users/Anna/Desktop/SPRING 2016/STA 104/weather.csv",header=T)
+deaths = data$Deaths
+groups = data$Groups
+dat = data.frame(deaths, groups)
+rm(deaths,groups)
+dat$rank = rank(dat$deaths, ties = "average")
+group.order = aggregate(deaths ~ groups, dat, mean)$groups
+Xi = aggregate(deaths ~ groups, dat, mean)$deaths
+si = aggregate(deaths ~ groups, dat, sd)$deaths
+Ri = aggregate(rank ~ groups, dat, mean)$rank
+ni = aggregate(deaths ~ groups, dat, length)$deaths
+results = rbind(Xi,si,Ri,ni)
+rownames(results) = c("Sample Mean","Sample SD","Rank Mean","Sample Size")
+colnames(results) = as.character(group.order)
 
+library(coin)
+data = read.csv("C:/Users/Anna/Desktop/SPRING 2016/STA 104/weather.csv",header=T)
+deaths = data$Deaths
+groups = data$Groups
+dat = data.frame(deaths, groups)
+rm(deaths,groups)
+test = oneway_test(deaths ~ groups, dat)
+
+# Histograms and Boxplot
+library(FSA)
+hist(deaths ~ groups, dat, xlab='Number of Deaths')
+
+boxplot(dat$deaths[1:6],dat$deaths[7:12],dat$deaths[13:18],dat$deaths[19:24],names=c('Lig
+htning','Tornado','Flash Flood','Blizzard'),xlab='Types of Extreme Weather',ylab='Number
+of Deaths',main='Boxplot for Weather Data')
+
+# Multiple Comparisons
+library(coin)
+data = read.csv("C:/Users/Anna/Desktop/SPRING 2016/STA 104/weather.csv",header=T)
+deaths = data$Deaths
+groups = data$Groups
+dat = data.frame(deaths, groups)
+rm(deaths,groups)
+dat$rank = rank(dat$deaths, ties = "average")
+group.order = aggregate(deaths ~ groups, dat, mean)$groups
+Xi = aggregate(deaths ~ groups, dat, mean)$deaths
+si = aggregate(deaths ~ groups, dat, sd)$deaths
+Ri = aggregate(rank ~ groups, dat, mean)$rank
+rm(length)
+ni = aggregate(deaths ~ groups, dat, length)$deaths
+results = rbind(Xi,si,Ri,ni)
+rownames(results) = c("Group Mean","Group SD","Rank Mean","Sample Size")
+colnames(results) = as.character(group.order)
+SR.2 = var(dat$rank)
+N = nrow(dat)
+K = length(unique(dat$groups))
+
+all.diff = abs(c(Ri[1] ‐ Ri[2],Ri[1] ‐ Ri[3], Ri[1] ‐ Ri[4],Ri[2] ‐ Ri[3],Ri[2] ‐ Ri[4],R
+i[3] ‐ Ri[4]))
+names(all.diff) = c("I vs II","I vs III","I vs IV","II vs III","II vs IV","III vs IV")
+
+alpha = 0.05
+g = K*(K‐1)/2
+BON12 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[1] + 1/ni[2]))
+BON13 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[1] + 1/ni[3]))
+BON14 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[1] + 1/ni[4]))
+BON23 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[2] + 1/ni[3]))
+BON24 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[2] + 1/ni[4]))
+BON34 = qnorm(1‐alpha/(2*g))*sqrt(SR.2*(1/ni[3] + 1/ni[4]))
+all.BON = c(BON12, BON13, BON14, BON23, BON24, BON34)
+LSD12 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[1] + 1/ni[2]))
+LSD13 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[1] + 1/ni[3]))
+LSD14 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[1] + 1/ni[4]))
+LSD23 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[2] + 1/ni[3]))
+LSD24 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[2] + 1/ni[4]))
+LSD34 = qnorm(1‐alpha/(2))*sqrt(SR.2*(1/ni[3] + 1/ni[4]))
+all.LSD = c(LSD12,LSD13,LSD14,LSD23,LSD24,LSD34)
+HSD12 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[1] + 1/ni[2]))
+HSD13 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[1] + 1/ni[3]))
+HSD14 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[1] + 1/ni[4]))
+HSD23 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[2] + 1/ni[3]))
+HSD24 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[2] + 1/ni[4]))
+HSD34 = qtukey(1‐alpha,K,N‐K)*sqrt((SR.2/2)*(1/ni[3] + 1/ni[4]))
+all.HSD = c(HSD12,HSD13,HSD14,HSD23,HSD24,HSD34)
 ```
 
 [back](./)
