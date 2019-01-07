@@ -23,6 +23,8 @@ layout: default
 
 # [Weather Report](./weatherreport.html)
 
+![Branching](/assets/img/WR_1.png)
+
 **Goal:** Investigate data on deaths due to extreme weather in the U.S.
 
 **Summary:** Implement non-parametric methods to assess which extreme weather conditions are deadlier[...see more](./weatherreport.html)
