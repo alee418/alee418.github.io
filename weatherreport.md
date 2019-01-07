@@ -87,7 +87,7 @@ this information, we could say that areas where flash floods are more common may
 present higher risk than those that have more lightning occurrence. For someone
 looking for a new place to live or looking for insurance rates for a certain area, it
 would be good to know the difference between areas that predominantly
-experience flash floods and areas the see mostly lightning.
+experience flash floods and areas that see mostly lightning.
 
 ```r
 # Krustal Wallis Test
