@@ -50,7 +50,13 @@ for in our simple logistic regression.
 
 ### Results
 
-### pics (2)
+**Model 1: Full Model**
+
+#### pic
+
+**Model 2: Reduced Model**
+
+#### pic
 
 Based on backwards stepwise regression and AIC, our reduced model is the best model.
 Final Model: c ~ ct + csp + ma + bn + bdc + nn + m (includes variables 2, 4, 5, 7, 8, 9, 10).
@@ -60,20 +66,24 @@ for every one unit change in clump thickness, the log odds of malignant (vs beni
 increases by 0.534. For a one unit change in marginal adhesion, the log odds of the cancer
 being malignant increases by 0.342, etc.
 
-### pic
+**Odds Ratio**
+
+#### pic
 
 For odds ratio, we can now say that for a one unit increase in clump thickness, the odds of a
 cancer being malignant (vs being benign) increase by a factor of 1.7, etc. The 95%
 confidence interval for that odds ratio would subsequently be (1.3, 2.3).
 
-### pic
+**Goodness of Fit (Likelihood Ratio Test)**
+
+#### pic
 
 Chi-square of 781.08 with 7 degrees of freedom and an associated p-value of less than 0.05
 shows that our model fits significantly better than the empty model.
 
 **Residual Plots**
 
-### pics (2)
+#### pics (2)
 
 There are two lines of points because we are predicting for a variable that takes on one of
 two values. We can see that there are outliers in our data (standardized residuals below -2
