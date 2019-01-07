@@ -20,7 +20,7 @@ As you can see from below, the x^1/3 transformation provides the best solution. 
 were to draw bands around the data, they would be equidistant throughout. From this point on,
 we shall be using the x^1/3 transformation.
 
-### pic
+![Branching](/assets/img/BARP_2.png)
 
 ## ACF, PACF, and Periodogram
 
@@ -29,14 +29,18 @@ model. Based on the ACF, we choose q=2; through the PACF, p=2. Because we are di
 we decide upon an ARIMA(2, 0, 2) model. From the periodograms, there are no significant
 peaks, and therefore, no evidence of seasonality.
 
-### pics (2)
+![Branching](/assets/img/BARP_3.png)
+
+![Branching](/assets/img/BARP_4.png)
 
 ## Fitting A Model
 
 The model we fit is an ARIMA(2,0,2) with a non zero-mean. The coefficients are given below
 along with the variance. The blue points are the fitted values.
 
-### pics (2)
+![Branching](/assets/img/BARP_5.png)
+
+![Branching](/assets/img/BARP_6.png)
 
 ## Residuals
 
@@ -46,14 +50,22 @@ that all structures are accounted for and there is no discernable trend or seaso
 Box Ljung test produced a large p-value, supporting the idea that there is not enough evidence to
 say the residuals are dependent.
 
-### pics (4)
+![Branching](/assets/img/BARP_7.png)
+
+![Branching](/assets/img/BARP_8.png)
+
+![Branching](/assets/img/BARP_9.png)
+
+![Branching](/assets/img/BARP_10.png)
 
 ## Fit Model With auto.arima
 
 The model we fit is an ARIMA(0,0,2) with a zero-mean. The coefficients are given below along
 with the variance. The blue points are the fitted values.
 
-### pics (2)
+![Branching](/assets/img/BARP_11.png)
+
+![Branching](/assets/img/BARP_12.png)
 
 ## Residuals
 
@@ -65,7 +77,13 @@ results of running the Box-Ljung test, in which our p-value is greater than our 
 0.05; from this test, we can conclude there is not enough evidence to say it is dependent.
 Therefore, the fit of the model is good.
 
-### pics (4)
+![Branching](/assets/img/BARP_13.png)
+
+![Branching](/assets/img/BARP_14.png)
+
+![Branching](/assets/img/BARP_15.png)
+
+![Branching](/assets/img/BARP_16.png)
 
 ## Theoretical Spectral Density
 
@@ -73,7 +91,7 @@ We chose L through creating a vector of candidates of odd numbers from 3 to 117.
 the modified Daniell kernel to choose an L of 39 for our smoothed periodogram. The plot given
 below is the theoretical spectral density, which is similar to our smoothed version from step 3.
 
-### pic
+![Branching](/assets/img/BARP_17.png)
 
 ## Forecasting
 
@@ -81,11 +99,13 @@ In using auto.arima, R chose an ARIMA(1,1,1) model with the following coefficien
 is 1074. We kept the original data rather than transform it because the resulting ARIMA model is
 not efficient; it overfit the data and had a variance of 0.
 
-### pic
+![Branching](/assets/img/BARP_18.png)
 
 The residuals are an approximate Gaussian distribution.
 
-### pics (2)
+![Branching](/assets/img/BARP_19.png)
+
+![Branching](/assets/img/BARP_20.png)
 
 The performance of the forecast shows an upward trend, consistent with the trend in the observed
 data. Unlike the observed data, the forecast does not have peaks and troughs but rather, is closer
@@ -93,7 +113,9 @@ to a straight line. Most points are close to the observed. This is a sufficient 
 crime is dependent on economic environment, which is hard to include in our model as it is not a
 trend nor a seasonal thing.
 
-### pics (2)
+![Branching](/assets/img/BARP_21.png)
+
+![Branching](/assets/img/BARP_22.png)
 
 ## Appendix
 
