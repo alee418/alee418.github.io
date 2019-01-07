@@ -125,37 +125,123 @@ library(astsa)
 library(forecast)
 
 data=read.table("bostonArmedrobberies.txt")
-x = data[,2]
-plot.ts(x,ylab="Number of Armed
-Robberies")
+x=data[,2]
+plot.ts(x,ylab="Number of Armed Robberies")
 n=length(x)
 m=floor(n/2)
 
-# Tranform the data
+# Transform the data
 par(mfrow=c(1,2))
-xt = sqrt(x)
+xt=sqrt(x)
 ts.plot(xt,ylab="# of Armed Robberies",main="Transformation square root")
-xt = log(x)
-ts.plot(xt,ylab="# of Armed
-Robberies",main="Transformation logx")
+xt=log(x)
+ts.plot(xt,ylab="# of Armed Robberies",main="Transformation logx")
 xt = x^(1/3)
-ts.plot(xt,ylab="# of Armed
-Robberies",main="Transformation x^1/3")
+ts.plot(xt,ylab="# of Armed Robberies",main="Transformation x^1/3")
 xt = 1/x
-ts.plot(xt,ylab="# of Armed
-Robberies",main="Transformation inverse")
+ts.plot(xt,ylab="# of Armed Robberies",main="Transformation inverse")
+
 #chosen transformation
 x1=x
-xt = x^(1/3)
-xt = diff(xt)
+xt=x^(1/3)
+xt=diff(xt)
+
 # ACF and PACF
 acf(xt)
 pacf(xt)
-# get the raw periodogram values at the
-Fourier frequencies
-pgrm.raw = spec.pgram(xt,
-plot=F,log='no')$spec
-# vector of candidate L values for smoothing
+
+# get the raw periodogram values at the Fourier frequencies
+pgrm.raw = spec.pgram(xt,plot=F,log='no')$spec
+
+# vector of candidate L values for smoothing 
+spans = (1:(m-1))*2+1
+
+# vector to store criterion values for each L
+Q = numeric(length(spans))
+
+# go through the L values and compute Q for each
+for(j in 1:length(spans)){
+L = spans[j]
+pgrm.smooth = spec.pgram(xt,
+spans=L,log='no', plot=F)$spec
+Q[j] = sum((pgrm.smooth - pgrm.raw) ^ 2)
++ sum((pgrm.raw)^2)/(L-1)
+}
+
+# plot the values
+plot(x=spans, y=Q, type='b')
+
+# figure out which L is best
+L = spans[which.min(Q)]; L
+par(mfrow=c(1,2))
+spec.pgram(xt, log='no')
+spec.pgram(xt, spans=L, log='no')
+par(mfrow=c(1,1))
+
+#step 4
+mod1=Arima(xt, order=c(2,0,2))
+mod1$coef
+summary(mod1)
+fitted.values=fitted(mod1)
+plot.ts(xt,ylab="Number of Armed Robberies")
+points(fitted.values, type = "p", col="blue")
+
+#step 5
+hist(mod1$residuals)
+res1=mod1$residuals
+qqnorm(res1)
+plot.ts(res1)
+Box.test(mod1$residuals, lag= 20, type="Ljung-Box")
+
+#step 6
+# fit arima model
+mod=auto.arima(xt)
+mod$coef
+summary(mod)
+fitted.values=fitted(mod)
+plot.ts(xt,ylab="Number of Armed Robberies")
+points(fitted.values, type = "p", col="blue")
+
+#step 7
+hist(mod$residuals)
+res1=mod$residuals
+qqnorm(res1)
+plot.ts(res1)
+Box.test(mod$residuals, lag= 20, type="Ljung-Box")
+
+#step 8
+arma.spec(ma=c(-0.365, -0322.), log='no',main='Spectral Density')
+
+#step 9
+x2=x[1:108]
+mod2=auto.arima(x2)
+summary(mod2)
+res = mod2$residuals
+ts.plot(res)
+acf(res)
+pacf(res)
+Box.test(res,lag=20,type="Ljung")
+hist(res)
+qqnorm(res)
+qqline(res)
+plot(forecast(mod2))
+points(x, col="black", type="l")
+h = 10; n=108
+model = Arima(x2, order=c(1,1,1))
+summary(model)
+fcasts = predict(model,n.ahead=10)
+f.vals=cbind(394.4054, 395.8202, 396.4080, 396.6522, 396.7536, 396.7958, 396.8133, 396.8206, 396.8236, 396.8248)
+f.se = cbind(37.24433, 44.86115, 49.08646, 52.21815, 54.89536, 57.34153, 59.64566, 61.84736, 63.96665, 66.01526)
+upper1 = f.vals + f.se
+lower1 = f.vals - f.se
+upper2 = f.vals + 2 * f.se
+lower2 = f.vals - 2 * f.se
+plot.ts(x,xlim=c(108,n+h))
+polygon(x=c(n+(1:h),n+(h:1)),y=c(upper2,lower2[h:1]), col='lightblue',border=NA)
+polygon(x=c(n+(1:h),n+(h:1)),y=c(upper1,lower1[h:1]), col='blue',border=NA)
+points(x=n+1:h, y=f.vals,
+col='darkblue',type='b',pch=19)
+points(x, type="l")
 ```
 
 [back](./)
