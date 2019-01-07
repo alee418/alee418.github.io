@@ -13,16 +13,16 @@ layout: default
 
 # [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
 
-**Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
+**Goal:** Analyze categorical data on instances of breast cancer reported by UC Irvine.
 
-**Summary:** Hello, hello, hello[...see more](./predictbreastcancers.html)
+**Summary:** Conduct a simple logistic regression to predict if a tumor will be malignant or benign[...see more](./predictbreastcancers.html)
 
 * * *
 
 # [Weather Report](./weatherreport.html)
 
-**Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
+**Goal:** Investigate data on deaths due to extreme weather in the U.S.
 
-**Summary:** Hello, hello, hello[...see more](./weatherreport.html)
+**Summary:** Implement non-parametric methods to assess which extreme weather conditions are deadlier[...see more](./weatherreport.html)
 
 * * *
