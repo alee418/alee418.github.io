@@ -33,7 +33,7 @@ peaks, and therefore, no evidence of seasonality.
 
 ![Branching](/assets/img/BARP_4.png)
 
-## Fitting A Model
+## Fitting a Model
 
 The model we fit is an ARIMA(2,0,2) with a non zero-mean. The coefficients are given below
 along with the variance. The blue points are the fitted values.
@@ -58,7 +58,7 @@ say the residuals are dependent.
 
 ![Branching](/assets/img/BARP_10.png)
 
-## Fit Model With auto.arima
+## Fit Model with auto.arima
 
 The model we fit is an ARIMA(0,0,2) with a zero-mean. The coefficients are given below along
 with the variance. The blue points are the fitted values.
@@ -123,6 +123,39 @@ trend nor a seasonal thing.
 install.packages("astsa")
 library(astsa)
 library(forecast)
+
+data=read.table("bostonArmedrobberies.txt")
+x = data[,2]
+plot.ts(x,ylab="Number of Armed
+Robberies")
+n=length(x)
+m=floor(n/2)
+
+# Tranform the data
+par(mfrow=c(1,2))
+xt = sqrt(x)
+ts.plot(xt,ylab="# of Armed Robberies",main="Transformation square root")
+xt = log(x)
+ts.plot(xt,ylab="# of Armed
+Robberies",main="Transformation logx")
+xt = x^(1/3)
+ts.plot(xt,ylab="# of Armed
+Robberies",main="Transformation x^1/3")
+xt = 1/x
+ts.plot(xt,ylab="# of Armed
+Robberies",main="Transformation inverse")
+#chosen transformation
+x1=x
+xt = x^(1/3)
+xt = diff(xt)
+# ACF and PACF
+acf(xt)
+pacf(xt)
+# get the raw periodogram values at the
+Fourier frequencies
+pgrm.raw = spec.pgram(xt,
+plot=F,log='no')$spec
+# vector of candidate L values for smoothing
 ```
 
 [back](./)
