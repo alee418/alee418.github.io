@@ -7,7 +7,7 @@ layout: default
 
 **Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
 
-**Summary:** Hello, hello, hello[...see more](./bostonarmedrobberies.html).
+**Summary:** Use time series techniques and best-fitting models to forecast future trends in criminality[...see more](./bostonarmedrobberies.html).
 
 * * *
 
