@@ -119,9 +119,7 @@ test = oneway_test(deaths ~ groups, dat)
 library(FSA)
 hist(deaths ~ groups, dat, xlab='Number of Deaths')
 
-boxplot(dat$deaths[1:6],dat$deaths[7:12],dat$deaths[13:18],dat$deaths[19:24],names=c('Lig
-htning','Tornado','Flash Flood','Blizzard'),xlab='Types of Extreme Weather',ylab='Number
-of Deaths',main='Boxplot for Weather Data')
+boxplot(dat$deaths[1:6],dat$deaths[7:12],dat$deaths[13:18],dat$deaths[19:24],names=c('Lightning','Tornado','Flash Flood','Blizzard'),xlab='Types of Extreme Weather',ylab='Number of Deaths',main='Boxplot for Weather Data')
 
 # Multiple Comparisons
 library(coin)
@@ -144,8 +142,7 @@ SR.2 = var(dat$rank)
 N = nrow(dat)
 K = length(unique(dat$groups))
 
-all.diff = abs(c(Ri[1] ‐ Ri[2],Ri[1] ‐ Ri[3], Ri[1] ‐ Ri[4],Ri[2] ‐ Ri[3],Ri[2] ‐ Ri[4],R
-i[3] ‐ Ri[4]))
+all.diff = abs(c(Ri[1] ‐ Ri[2],Ri[1] ‐ Ri[3], Ri[1] ‐ Ri[4],Ri[2] ‐ Ri[3],Ri[2] ‐ Ri[4],Ri[3] ‐ Ri[4]))
 names(all.diff) = c("I vs II","I vs III","I vs IV","II vs III","II vs IV","III vs IV")
 
 alpha = 0.05
