@@ -11,7 +11,7 @@ layout: default
 
 * * *
 
-# Predicting Occurrence of Breast Cancers
+# [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
 
 **Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
 
@@ -19,7 +19,7 @@ layout: default
 
 * * *
 
-# Weather Report
+# [Weather Report](./weatherreport.html)
 
 **Goal:** Perform data analysis on armed robberies in Boston from 1966 to 1975.
 
