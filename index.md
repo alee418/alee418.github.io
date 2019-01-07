@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# [Boston Armed Robberies Report](./bostonarmedrobberies.html)
+## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
 
 ![Branching](/assets/img/BARP_1.png)
 
@@ -11,7 +11,7 @@ layout: default
 
 * * *
 
-# [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
+## [Predicting Occurrence of Breast Cancers](./predictbreastcancers.html)
 
 ![Branching](/assets/img/POBC_5.png)
 
@@ -21,7 +21,7 @@ layout: default
 
 * * *
 
-# [Weather Report](./weatherreport.html)
+## [Weather Report](./weatherreport.html)
 
 ![Branching](/assets/img/WR_1.png)
 
