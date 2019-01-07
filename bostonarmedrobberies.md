@@ -29,7 +29,7 @@ model. Based on the ACF, we choose q=2; through the PACF, p=2. Because we are di
 we decide upon an ARIMA(2, 0, 2) model. From the periodograms, there are no significant
 peaks, and therefore, no evidence of seasonality.
 
-### pic
+### pics (2)
 
 ## Fitting A Model
 
