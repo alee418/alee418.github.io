@@ -162,10 +162,8 @@ Q = numeric(length(spans))
 # go through the L values and compute Q for each
 for(j in 1:length(spans)){
 L = spans[j]
-pgrm.smooth = spec.pgram(xt,
-spans=L,log='no', plot=F)$spec
-Q[j] = sum((pgrm.smooth - pgrm.raw) ^ 2)
-+ sum((pgrm.raw)^2)/(L-1)
+pgrm.smooth = spec.pgram(xt,spans=L,log='no', plot=F)$spec
+Q[j] = sum((pgrm.smooth - pgrm.raw) ^ 2) + sum((pgrm.raw)^2)/(L-1)
 }
 
 # plot the values
