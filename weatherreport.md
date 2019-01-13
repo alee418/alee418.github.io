@@ -89,6 +89,8 @@ looking for a new place to live or looking for insurance rates for a certain are
 would be good to know the difference between areas that predominantly
 experience flash floods and areas that see mostly lightning.
 
+## Appendix
+
 ```r
 # Krustal Wallis Test
 library(coin)
