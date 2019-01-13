@@ -76,6 +76,8 @@ Females do for similar crimes. Using this information, we could say that males
 spend significantly more time in jail than women do for crimes similar in severity
 and this could be due to gender bias.
 
+## Appendix
+
 ```r
 # Mann-Whitney Test
 library(coin)
