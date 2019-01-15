@@ -38,3 +38,13 @@ layout: default
 **Goal:** Examine information about sentence lengths for crimes of similar severity for males and females.
 
 **Summary:** Apply non-parametric techniques to detect significant difference in length of prison sentences between genders[...see more](./prisonreport.html)
+
+* * *
+
+## [Bootstrapping Median Inmate IQ](./bootstrapmedianIQ.html)
+
+![Branching](/assets/img/BMII_5.png)
+
+**Goal:** Study recorded inmate IQ scores and potential difference in median IQ between genders.
+
+**Summary:** Use bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./bootstrapmedianIQ.html)
