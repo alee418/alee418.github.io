@@ -137,6 +137,45 @@ boot.sample = sample(b.data, length(b.data),replace = T)
 theta.i = median(boot.sample)
 return(theta.i)
 })
-hist(boot.median,main = "Bootstrap Distribution of Median",xlab = "Bootstrap Median")```
+hist(boot.median,main = "Bootstrap Distribution of Median",xlab = "Bootstrap Median")
+theta.hat = median(b.data)
+boot.expect = mean(boot.median)
+boot.bias = boot.expect ‐ theta.hat
+boot.SE = sqrt( var(boot.median)*(B‐1)/B)
+
+# BCA Confidence Interval Method
+median.fun = function(b.data, random){
+boot.data = b.data[random]
+return(median(boot.data))
+}
+alpha = 0.05
+r.bootstraps = boot(b.data,median.fun, R = 4000)
+r.ci = boot.ci(r.bootstraps,type = "bca",conf = 1‐alpha)
+r.ci.bca = r.ci$bca[4:5]
+
+# Difference of Two Samples Bootstrap Method
+B = 4000
+boot.diff = sapply(1:B,function(i){
+group1 = dat$iq[data$gender == "F"]
+group2 = dat$iq[data$gender == "M"]
+boot.group1 = sample(group1, length(group1),replace = T)
+boot.group2 = sample(group2, length(group2),replace = T)
+return(median(boot.group1) ‐ median(boot.group2))
+})
+hist(boot.diff,xlab = "Bootstrap Difference",main = "Bootstrap Distribution of Difference
+in Median of Female vs. Male")
+
+theta.hat = median(dat$iq[data$gender == "F"]) ‐ median(dat$iq[data$gender == "M"])
+boot.expect = mean(boot.diff); boot.bias = boot.expect ‐ theta.hat
+boot.SE = sqrt(var(boot.diff)*(B‐1)/B)
+
+# Difference in Two Sample Medians BCA Method
+diff.fun = function(boot.diff,random){
+boot.data = boot.diff[random]
+return(boot.data)
+}; alpha = 0.10
+CI = boot.ci(boot(boot.diff,diff.fun,R = 4000),conf=1‐alpha,type = "bca")
+bca.CI = CI$bca[4:5]
+```
 
 [back](./)
