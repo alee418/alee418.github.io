@@ -47,7 +47,7 @@ layout: default
 
 **Goal:** Analyze trend in levels of Lake Huron from 1875 to 1972.
 
-**Summary:** Use graphical analysis, time series methods, and an appropriate model to forecast the next decade of lake levels[...see more](./prisonreport.html)
+**Summary:** Use graphical analysis, time series methods, and an appropriate model to forecast the next decade of lake levels[...see more](./LakeHuron.html)
 
 * * *
 
