@@ -3,8 +3,6 @@ layout: default
 ---
 # Projects
 
-* * *
-
 ## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
 
 ![Branching](/assets/img/BARP_1.png)
