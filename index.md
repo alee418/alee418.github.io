@@ -58,3 +58,11 @@ layout: default
 **Goal:** Study recorded inmate IQ scores and potential difference in median IQ between genders.
 
 **Summary:** Apply bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./jailreport.html)
+
+## [Parole Violation Depending on Record](./parolereport.html)
+
+![Branching](/assets/img/PV_1.png)
+
+**Goal:** Execute data analysis of parole term violations based on prior behavior.
+
+**Summary:** Implement permutation tests to predict parole violations and determine which parolees should require more surveillance[...see more](./parolereport.html)
