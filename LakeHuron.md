@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Lake Huron Water Levels
+# Lake Huron Levels Forecast
 
 ## Introduction
 
