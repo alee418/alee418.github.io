@@ -41,10 +41,20 @@ layout: default
 
 * * *
 
+## [Lake Huron Water Levels](./LakeHuron.html)
+
+![Branching](/assets/img/LH_2.png)
+
+**Goal:** Analyze trend in levels of Lake Huron from 1875 to 1972.
+
+**Summary:** Use graphical analysis, time series methods, and an appropriate model to forecast the next decade of lake levels[...see more](./prisonreport.html)
+
+* * *
+
 ## [Bootstrapping Median Inmate IQ](./bootstrapmedianIQ.html)
 
 ![Branching](/assets/img/BMII_5.png)
 
 **Goal:** Study recorded inmate IQ scores and potential difference in median IQ between genders.
 
-**Summary:** Use bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./bootstrapmedianIQ.html)
+**Summary:** Apply bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./bootstrapmedianIQ.html)
