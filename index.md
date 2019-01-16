@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Data Science Portfolio
+# Projects
 
 ## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
 
