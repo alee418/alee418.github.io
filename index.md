@@ -51,10 +51,10 @@ layout: default
 
 * * *
 
-## [Bootstrapping Median Inmate IQ](./bootstrapmedianIQ.html)
+## [Bootstrapping Median Inmate IQ](./jailreport.html)
 
 ![Branching](/assets/img/BMII_5.png)
 
 **Goal:** Study recorded inmate IQ scores and potential difference in median IQ between genders.
 
-**Summary:** Apply bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./bootstrapmedianIQ.html)
+**Summary:** Apply bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./jailreport.html)
