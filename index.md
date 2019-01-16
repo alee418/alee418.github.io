@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Anna Lee | Data Science Portfolio
+# Data Science Portfolio
 
 ## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
 
