@@ -54,7 +54,7 @@ The Z values for comparing row values for each column are as follows:
 
 ![Branching](/assets/img/PV_4.png)
 
-Using R, the Tukey cutoff value using is 2.443.
+Using R, the Tukey cutoff value using alpha = 0.05 is 2.443.
 
 According to the cutoff value, there is significant difference between No Violation
 and Violation in the Jail and None categories.
