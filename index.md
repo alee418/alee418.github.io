@@ -59,6 +59,8 @@ layout: default
 
 **Summary:** Apply bootstrap methods to address median IQ for inmates versus overall median for IQ and median IQ difference by gender for inmates[...see more](./jailreport.html)
 
+* * *
+
 ## [Parole Violation Depending on Record](./parolereport.html)
 
 ![Branching](/assets/img/PV_1.png)
