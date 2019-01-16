@@ -41,7 +41,7 @@ layout: default
 
 * * *
 
-## [Lake Huron Water Levels](./LakeHuron.html)
+## [Lake Huron Levels Forecast](./LakeHuron.html)
 
 ![Branching](/assets/img/LH_2.png)
 
