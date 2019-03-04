@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Weather Report
+# Extreme Weather Data Report
 
 ## Introduction
 
