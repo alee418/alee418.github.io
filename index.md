@@ -25,7 +25,7 @@ layout: default
 
 * * *
 
-## [Weather Report](./weatherreport.html)
+## [Extreme Weather Data Report](./weatherreport.html)
 
 ![Branching](/assets/img/WR_1.png)
 
