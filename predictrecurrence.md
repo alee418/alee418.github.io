@@ -4,7 +4,7 @@ layout: default
 
 # Predicting Recurrence of Breast Cancers
 
-## Which variables, linear or nominal, best predict breast cancer recurrence events?
+## Which variables best predict breast cancer recurrence events?
 
 ### Introduction
 
