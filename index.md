@@ -5,6 +5,12 @@ layout: default
 
 * * * 
 
+## [Statistics in Racial Profiling and Police Brutality](./policebrutality.html)
+
+![Branching](/assets/img/PB_1.png)
+
+* * *
+
 ## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
 
 ![Branching](/assets/img/BARP_1.png)
