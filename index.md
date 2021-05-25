@@ -3,12 +3,6 @@ layout: default
 ---
 # Projects
 
-* * * 
-
-## [Statistics in Racial Profiling and Police Brutality](./policebrutality.html)
-
-![Branching](/assets/img/PB_1.png)
-
 * * *
 
 ## [Boston Armed Robberies Report](./bostonarmedrobberies.html)
@@ -78,3 +72,9 @@ layout: default
 **Goal:** Execute data analysis of parole term violations based on prior behavior.
 
 **Summary:** Implement permutation tests to predict parole violations and determine which parolees should require more surveillance[...see more](./parolereport.html)
+
+* * * 
+
+## [Statistics in Racial Profiling and Police Brutality](./policebrutality.html)
+
+![Branching](/assets/img/PB_1.png)
