@@ -78,3 +78,7 @@ layout: default
 ## [Statistics in Racial Profiling and Police Brutality](./policebrutality.html)
 
 ![Branching](/assets/img/PB_1.png)
+
+**Goal:** Collect and analyze data, and engage with prior knowledge on a subject in order to make new meaning.
+
+**Summary:** Use research (cited primary and secondary research) to evaluate, analyze, and synthesize prior knowledge on a subject and create new knowledge through primary research.
