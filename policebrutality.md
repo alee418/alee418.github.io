@@ -52,3 +52,5 @@ layout: default
 ### Kappeler, Victor E. "Being Arrested can be Hazardous to your Health, Especially if you are a Person of Color." EKU Online: Police Studies 18 February 2014. Website.
 ### McLaughlin, Eliott C. "We're not seeing more police shootings, just more news coverage." CNN 21 April 2015. Website.
 ### United States Department of Justice Civil Rights Division. "Investigation of the Ferguson Police Department." 2015. Document.
+
+[back](./)
