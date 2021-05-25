@@ -3,6 +3,8 @@ layout: default
 ---
 
 # Statistics in Racial Profiling and Police Brutality
+
+### 20 May 2015
 	
 ## Introduction
 
