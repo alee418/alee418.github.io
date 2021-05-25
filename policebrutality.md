@@ -2,11 +2,6 @@
 layout: default
 ---
 
-### Anna Lee
-### UWP 1
-### 20 May 2015
-### 1693 Words
-
 # Statistics in Racial Profiling and Police Brutality
 	
 ## Introduction
