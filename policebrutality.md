@@ -46,11 +46,11 @@ Data, as we have found it, might not be an exact or perfect representation of a 
  
 ## Works Cited
 
-### Clay, Rebecca A. "Post-Ferguson." American Psychological Association (2015): 14. Print.
-### Committee on the Judiciary. 21st Century Law Enforcement: How Smart Policing Targets Criminal Behavior. Washington: U.S. Government Printing Office, 2012. Document.
-### Infobase. "Do U.S. police departments use appropriate force when dealing with the public?" Issues & Controversies 6 May 2015. Website.
-### Kappeler, Victor E. "Being Arrested can be Hazardous to your Health, Especially if you are a Person of Color." EKU Online: Police Studies 18 February 2014. Website.
-### McLaughlin, Eliott C. "We're not seeing more police shootings, just more news coverage." CNN 21 April 2015. Website.
-### United States Department of Justice Civil Rights Division. "Investigation of the Ferguson Police Department." 2015. Document.
+#### Clay, Rebecca A. "Post-Ferguson." American Psychological Association (2015): 14. Print.
+#### Committee on the Judiciary. 21st Century Law Enforcement: How Smart Policing Targets Criminal Behavior. Washington: U.S. Government Printing Office, 2012. Document.
+#### Infobase. "Do U.S. police departments use appropriate force when dealing with the public?" Issues & Controversies 6 May 2015. Website.
+#### Kappeler, Victor E. "Being Arrested can be Hazardous to your Health, Especially if you are a Person of Color." EKU Online: Police Studies 18 February 2014. Website.
+#### McLaughlin, Eliott C. "We're not seeing more police shootings, just more news coverage." CNN 21 April 2015. Website.
+#### United States Department of Justice Civil Rights Division. "Investigation of the Ferguson Police Department." 2015. Document.
 
 [back](./)
